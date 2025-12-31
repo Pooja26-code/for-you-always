@@ -1,13 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   document.body.classList.add("loaded");
-  document.addEventListener("click", () => {
-  if (music.paused) {
-    music.play();
-    localStorage.setItem("musicPlaying", "true");
-    if (btn) btn.innerText = "Pause Music 🔇";
-  }
-}, { once: true });
-
 
   const music = document.getElementById("bg-music");
   const btn = document.getElementById("music-btn");
@@ -46,4 +38,3 @@ function toggleMusic() {
     btn.innerText = "Play Music 🎵";
   }
 }
-
